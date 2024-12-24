@@ -1,11 +1,10 @@
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
-import Dashboard from './pages/Dashboard';
-import PlaceOrder from './pages/PlaceOrder';
-import Withdraw from './pages/Withdraw';
-import Referral from './pages/Referral';
-import KYC from './pages/KYC';
-import Sidebar from './components/Sidebar';
-
+import Dashboard from './assets/pages/Dashboard';
+import PlaceOrder from './assets/pages/PlaceOrder';
+import Withdraw from './assets/pages/Withdraw';
+import Referral from './assets/pages/Referral';
+// import KYC from './assets/pages/KYC';
+import Sidebar from './assets/pages/Sidebar';
 function App() {
   return (
     <Router>
@@ -17,7 +16,7 @@ function App() {
             <Route path="/place-order" element={<PlaceOrder />} />
             <Route path="/withdraw" element={<Withdraw />} />
             <Route path="/referral" element={<Referral />} />
-            <Route path="/kyc" element={<KYC />} />
+            {/* <Route path="/kyc" element={<KYC />} /> */}
           </Routes>
         </main>
       </div>
